@@ -1,24 +1,27 @@
-#include "header.h"
+#include <stdio.h>
+#include "lr.h"
+#define N 3
+#define K 3
 
-int main(){
-    printf(" %u",0);
-    char s;
-    scanf("%c",&s);
-    if (s == '1')
-        return labaone();
-    if (s == '2')
-        return labatwo();
-    if (s == '3')
-        return labathree();
-    if (s == '4')
-        return labafour();
-    if (s == '5')
-        return labafive();
-    if (s == '6')
-        return labasix();
-    if (s == '7')
-        return labaseven();
-    else{
-        return 0;
+int main()
+{
+    int c;
+    scanf("%d", &c);
+    switch(c){
+    case 1: return laba1();
+    case 2: return dop1();
+    case 3: return laba2();
+    case 4: return dop2();
+    case 5: return laba3();
+    case 6: return dop3();
+    case 7: return laba4();
+    case 8: return dop4();
+    case 9: return laba5();
+    case 10: return dop5();
+    case 11: return laba6();
+    case 12: return dop6();
+    case 13: return laba7();
     }
+
+    return 0;
 }
